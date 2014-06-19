@@ -1,0 +1,344 @@
+/*
+Copyright (C) 2014 jpm
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+/*
+	Created on : 18 juin 2014, 11:24:12
+	Author	 : jpm
+*/
+/* FONT : Permanent Marker */
+@font-face {
+	font-family: 'Permanent Marker';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local('Permanent Marker'),
+		local('PermanentMarker'),
+		url(../font/permanent_marker.woff) format('woff');
+}
+/* FONT : Ubuntu */
+@font-face {
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local('Ubuntu'),
+		url(../font/ubuntu_regular.woff) format('woff');
+}
+@font-face {
+font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local('Ubuntu Bold'),
+		local('Ubuntu-Bold'),
+		url(../font/ubuntu_bold.woff) format('woff');
+}
+@font-face {
+	font-family: 'Ubuntu';
+	font-style: italic;
+	font-weight: 400;
+	src:
+		local('Ubuntu Italic'),
+		local('Ubuntu-Italic'),
+		url(../font/ubuntu_italic.woff) format('woff');
+}
+@font-face {
+	font-family: 'Ubuntu';
+	font-style: italic;
+	font-weight: 700;
+	src:
+		local('Ubuntu Bold Italic'),
+		local('Ubuntu-BoldItalic'),
+		url(../font/ubuntu_bold_italic.woff) format('woff');
+}
+/* FONT : Muli */
+@font-face {
+	font-family: 'Muli';
+	font-style: normal;
+	font-weight: 300;
+	src:
+		local('Muli Light'),
+		local('Muli-Light'),
+		url(../font/muli_regular.woff) format('woff');
+}
+@font-face {
+	font-family: 'Muli';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local('Muli'),
+		url(../font/muli_bold.woff) format('woff');
+}
+@font-face {
+	font-family: 'Muli';
+	font-style: italic;
+	font-weight: 300;
+	src:
+		local('Muli Light Italic'),
+		local('Muli-LightItalic'),
+		url(../font/muli_italic.woff) format('woff');
+}
+@font-face {
+	font-family: 'Muli';
+	font-style: italic;
+	font-weight: 400;
+	src:
+		local('Muli Italic'),
+		local('Muli-Italic'),
+		url(../font/muli_bold_italic.woff) format('woff');
+}
+
+/* reset.by Eric Meyer http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	font-family: Corbel, Helvetica, Arial, sans-serif;
+	min-height: 740px;
+
+	background: #f0f0f0; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #f0f0f0 12%, #918a6f 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(12%,#f0f0f0), color-stop(100%,#918a6f)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #f0f0f0 12%,#918a6f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #f0f0f0 12%,#918a6f 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #f0f0f0 12%,#918a6f 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #f0f0f0 12%,#918a6f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#918a6f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+b, strong {
+	font-weight: bold
+}
+i, em {
+	font-style: italic
+}
+h1 {
+	font-family: 'Permanent Marker', Ubuntu, sans-serif;
+	font-size: 128px;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+/* IMPRESS*/
+.step {
+	position: relative;
+	/*width: 900px;*/
+	padding: 40px;
+	margin: 20px auto;
+
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box;
+	font-family: 'Ubuntu', san-serif;
+	font-size: 48px;
+	line-height: 1.5;
+	/*border: 1px solid greenyellow;*/
+}
+
+/*
+... and we enhance the styles for impress.js.
+
+Basically we remove the margin and make inactive steps a little bit transparent.
+*/
+.impress-enabled .step {
+	margin: 0;
+	opacity: 0.8;
+	-webkit-transition: opacity 1s; -moz-transition: opacity 1s; -ms-transition: opacity 1s; -o-transition: opacity 1s; transition: opacity 1s;
+}
+.impress-enabled .step.active {
+	opacity: 1;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+/* Memento */
+/*color : #e16e38; /* Orange */
+/*color: #919f54;/* Vert foncé*/
+
+.smoothy-2 {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.smoothy-10 {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.smoothy-50 {
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+/* Slide : Botaniste */
+#botaniste {
+	display:none;
+}
+.impress-on-botaniste {
+	background: #f0f0f0; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #f0f0f0 19%, #919f54 89%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(19%,#f0f0f0), color-stop(89%,#919f54)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #f0f0f0 19%,#919f54 89%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #f0f0f0 19%,#919f54 89%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #f0f0f0 19%,#919f54 89%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #f0f0f0 19%,#919f54 89%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#919f54',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.impress-on-botaniste .step{
+	display: none;
+}
+.impress-on-botaniste #botaniste{
+	display: block;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+/* Slide : continent */
+#continent .legende {
+	opacity: 0;
+}
+#continent .carte {
+	position: relative;
+}
+.impress-on-continent #continent .legende {
+	opacity: 1;
+	-webkit-transition: opacity 1s; -moz-transition: opacity 1s; -ms-transition: opacity 1s; -o-transition: opacity 1s; transition: opacity 1s;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	font-size: 32px;
+	color : #e16e38; /* Orange */
+}
+#continent .botaniste {
+	position: absolute;
+	-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+}
+#continent .botaniste.asie {
+	top: 270px;
+	left: 900px;
+	height:75px;
+}
+#continent .botaniste.europe {
+	top: 284px;
+	left: 600px;
+	height:40px;
+}
+#continent .botaniste.amerique-nord {
+	top: 300px;
+	left: 250px;
+	height:65px;
+}
+#continent .botaniste.afrique {
+	top: 470px;
+	left: 630px;
+	-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;
+	height:75px;
+}
+#continent .botaniste.amerique-sud {
+	top: 500px;
+	left: 390px;
+	height:40px;
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+/* Slide : Association */
+.impress-on-association #continent {
+	opacity : 1;
+}
+#association .asso-chiffres {
+	opacity: 0;
+}
+.impress-on-association #association .asso-chiffres {
+	opacity: 1;
+	-webkit-transition: opacity 1s; -moz-transition: opacity 1s; -ms-transition: opacity 1s; -o-transition: opacity 1s; transition: opacity 1s;
+	position: absolute;
+	bottom: -330px;
+	left: -350px;
+	list-style-type: square;
+	font-size: 32px;
+	width:1024px;
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+/* Slide : Overview */
+#overview {
+	display: none
+}
+.impress-on-overview .step {
+	opacity: 1;
+	cursor: pointer;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+/* IMPRESS NOT SUPPORTED STYLES */
+.fallback-message {
+	font-family: sans-serif;
+	line-height: 1.3;
+
+	display: none;
+	width: 780px;
+	padding: 10px 10px 0;
+	margin: 20px auto;
+
+	border-radius: 10px;
+	border: 1px solid #E4C652;
+	background: #EEDC94;
+}
+
+.fallback-message p {
+	margin-bottom: 10px;
+}
+
+.impress-disabled .step,
+.impress-not-supported .step {
+	position: relative;
+	opacity: 1;
+	margin: 20px auto;
+}
+
+.impress-not-supported .fallback-message {
+	display: block;
+}

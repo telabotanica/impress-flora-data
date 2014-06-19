@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+Copyright (C) 2014 - Tela Botanica
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=1024" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+		<title>Tela Botanica, Flora Data et le parcours de la données</title>
+		<meta name="description" content="Présentation impress.js de Tela Botanica, Flora Data et le parcours de la données." />
+		<meta name="author" content="Jean-Pascal MILCENT" />
+		<meta name="author" content="Marie PICARD" />
+		<meta name="author" content="Audrey TOCCO" />
+
+		<link rel="stylesheet" href="css/impress-tb.css" />
+		<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+		<link rel="apple-touch-icon" type="image/png" href="img/apple_touch_icon.png" />
+	</head>
+	<body class="impress-not-supported">
+		<div class="fallback-message">
+			<p>Ce navigateur <b>ne supporte pas les technologies nécessaires</b> pour impress.js,
+				cette présentation fonctionnera en mode dégradé.
+			</p>
+			<p>Pour profiter pleinement de cette présentation, utilisez les dernière version des navigateurs
+				<b>Chrome</b>, <b>Safari</b> ou <b>Firefox</b>.
+			</p>
+		</div>
+
+		<div id="impress">
+
+			<div id="botaniste" class="step" data-x="0" data-y="0" data-z="-3000" data-scale="1">
+				<img class="smoothy-50" src="img/botaniste.png" />
+			</div>
+
+			<div id="continent" class="step" data-x="0" data-y="0" data-scale="3">
+				<h1>Tela Botanica</h1>
+				<div class="carte">
+					<img src="img/continents.png" />
+					<img class="botaniste asie" src="img/botaniste_miniature.png" />
+					<img class="botaniste europe" src="img/botaniste_miniature.png" />
+					<img class="botaniste amerique-nord" src="img/botaniste_miniature.png" />
+					<img class="botaniste afrique" src="img/botaniste_miniature.png" />
+					<img class="botaniste amerique-sud" src="img/botaniste_miniature.png" />
+				</div>
+				<span class="legende">
+					Nombre de membres : <span>23 500</span>
+					<img src="img/carte_legende.png" />
+				</span>
+			</div>
+
+			<div id="association" class="step" data-x="0" data-y="400" data-scale="4">
+				<ul class="asso-chiffres">
+					<li>14 ans d'expérience dans la coopération</li>
+					<li>23 500 membres : amateurs, professionnels, scientifiques...</li>
+					<li>50% de débutants</li>
+				</ul>
+			</div>
+
+			<div id="overview-parcours" class="step" data-x="0" data-y="2000" data-scale="10"></div>
+
+			<div id="collecte" class="step" data-x="6000" data-y="2500" data-scale="2" data-rotate="-20">
+				<h1>Collecte</h1>
+				<img src="img/collecter.jpg">
+			</div>
+
+			<div id="saisie" class="step" data-x="3000" data-y="3500" data-scale="2" data-rotate="-10">
+				<h1>Saisie</h1>
+				<img src="img/collecter.jpg">
+			</div>
+
+			<div id="partage" class="step" data-x="0" data-y="4500" data-scale="2" data-rotate="0">
+				<h1>Partage</h1>
+				<img src="img/collecter.jpg">
+			</div>
+
+			<div id="visualisation" class="step" data-x="-3000" data-y="3500" data-scale="2" data-rotate="10">
+				<h1>Visualisation</h1>
+				<img src="img/collecter.jpg">
+			</div>
+
+			<div id="validation" class="step" data-x="-6000" data-y="2500" data-scale="2" data-rotate="20">
+				<h1>Validation</h1>
+				<img src="img/collecter.jpg">
+			</div>
+
+			<div id="overview" class="step" data-x="0" data-y="2000" data-scale="10"></div>
+		</div>
+		<script src="js/impress.js"></script>
+		<script>impress().init();</script>
+	</body>
+</html>
