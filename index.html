@@ -44,18 +44,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 		<div id="impress">
 
 			<div id="botaniste" class="step" data-x="0" data-y="0" data-z="-3000" data-scale="1">
-				<img class="smoothy-50" src="img/botaniste.png" />
+				<img class="smoothy-50" src="img/botaniste.jpg" />
 			</div>
 
 			<div id="continent" class="step" data-x="0" data-y="0" data-scale="3">
 				<h1>Tela Botanica</h1>
 				<div class="carte">
 					<img src="img/continents.png" />
-					<img class="botaniste asie" src="img/botaniste_miniature.png" />
-					<img class="botaniste europe" src="img/botaniste_miniature.png" />
-					<img class="botaniste amerique-nord" src="img/botaniste_miniature.png" />
-					<img class="botaniste afrique" src="img/botaniste_miniature.png" />
-					<img class="botaniste amerique-sud" src="img/botaniste_miniature.png" />
+					<img class="botaniste asie" src="img/botaniste_miniature.jpg" />
+					<img class="botaniste europe" src="img/botaniste_miniature.jpg" />
+					<img class="botaniste amerique-nord" src="img/botaniste_miniature.jpg" />
+					<img class="botaniste afrique" src="img/botaniste_miniature.jpg" />
+					<img class="botaniste amerique-sud" src="img/botaniste_miniature.jpg" />
 				</div>
 				<span class="legende">
 					Nombre de membres : <span>23 500</span>
@@ -73,19 +73,44 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 			<div id="overview-parcours" class="step" data-x="0" data-y="2000" data-scale="10"></div>
 
-			<div id="collecte" class="step" data-x="6000" data-y="2500" data-scale="2" data-rotate="-20">
+			<div id="collecter" class="step" data-x="6000" data-y="2500" data-scale="2" data-rotate="-20">
 				<h1>Collecte</h1>
-				<img src="img/collecter.jpg">
+				<div id="collecter-cadre">
+					<p id="collecter-txt">Relevés de terrain (observations, images) & identification.</p>
+					<img id="img-collecter" src="img/collecter.jpg" alt="Collecter" />
+					<img id="img-outil-id" src="img/outil_identification.jpg" alt="Outil d'identification" />
+				</div>
 			</div>
 
-			<div id="saisie" class="step" data-x="3000" data-y="3500" data-scale="2" data-rotate="-10">
+			<div id="saisie-titre" class="step" data-x="3000" data-y="3500" data-scale="2" data-rotate="-10">
 				<h1>Saisie</h1>
-				<img src="img/collecter.jpg">
 			</div>
 
-			<div id="partage" class="step" data-x="0" data-y="4500" data-scale="2" data-rotate="0">
+			<div id="saisie" class="step fondue" data-x="2900" data-y="3500" data-scale="1" data-rotate="-100">
+				<img src="img/site_accueil.jpg" alt="Accueil du site de Tela Botanica">
+				<p class="saisie-site">www.tela-botanica.org</p>
+			</div>
+
+			<div id="saisie-cel" class="step fondue" data-x="3100" data-y="4500" data-scale="1" data-rotate="-100">
+				<img class="img-cel-interface" src="img/cel.png" alt="Interface du CEL" />
+				<p class="cel-fonctions">Nommer, géolocaliser, illustrer son observation de terrain</p>
+				<p class="etape etape-01">&#8680; I. Intérêt personnel fort, puis...</p>
+			</div>
+
+			<div id="partage-titre" class="step" data-x="0" data-y="4500" data-scale="2" data-rotate="0">
 				<h1>Partage</h1>
-				<img src="img/collecter.jpg">
+			</div>
+
+			<div id="partage-cel" class="step fondue" data-x="0" data-y="5100" data-scale="1" data-rotate="-90">
+				<img src="img/cel_options.png" alt="Accueil du site de Tela Botanica">
+				<p class="img-partage-cel">Partage avec le collectif</p>
+				<p class="etape etape-02">&#8680; II. Premier pas vers la coopération : apporter sa pierre à l'édifice</p>
+			</div>
+
+			<div id="partage-reseau" class="step fondue" data-x="0" data-y="6500" data-scale="1" data-rotate="-90">
+				<img class="img-chat" src="img/macaron_chat.png" alt="Discussion dans le réseau" />
+				<img class="img-site-profil" src="img/site_reseau_profil.jpg" alt="Interface du profil d'un utilisateur" />
+				<p class="etape etape-03">&#8680; III. Se connaître, échanger...</p>
 			</div>
 
 			<div id="visualisation" class="step" data-x="-3000" data-y="3500" data-scale="2" data-rotate="10">
