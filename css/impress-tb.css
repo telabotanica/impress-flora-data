@@ -1,5 +1,5 @@
 /*
-Copyright (C) 2014 jpm
+Copyright (C) 2014 jpm et ses amis
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -18,87 +18,48 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	Created on : 18 juin 2014, 11:24:12
 	Author	 : jpm
 */
-/* FONT : Permanent Marker */
+
 @font-face {
-	font-family: 'Permanent Marker';
+	font-family: 'ArialMT';
+	src: url('../font/Arial MT.ttf') format('truetype');
+	font-weight: normal;
 	font-style: normal;
-	font-weight: 400;
-	src:
-		local('Permanent Marker'),
-		local('PermanentMarker'),
-		url(../font/permanent_marker.woff) format('woff');
-}
-/* FONT : Ubuntu */
-@font-face {
-	font-family: 'Ubuntu';
-	font-style: normal;
-	font-weight: 400;
-	src:
-		local('Ubuntu'),
-		url(../font/ubuntu_regular.woff) format('woff');
 }
 @font-face {
-font-family: 'Ubuntu';
+	font-family: 'Calibri';
+	src: url('../font/Calibri.ttf') format('truetype');
+	font-weight: normal;
 	font-style: normal;
+}
+@font-face {
+	font-family: 'Calibri';
+	src: url('../font/Calibri Bold.ttf') format('truetype');
 	font-weight: 700;
-	src:
-		local('Ubuntu Bold'),
-		local('Ubuntu-Bold'),
-		url(../font/ubuntu_bold.woff) format('woff');
+	font-style: normal;
 }
 @font-face {
-	font-family: 'Ubuntu';
-	font-style: italic;
-	font-weight: 400;
-	src:
-		local('Ubuntu Italic'),
-		local('Ubuntu-Italic'),
-		url(../font/ubuntu_italic.woff) format('woff');
+	font-family: 'Candara';
+	src: url('../font/Candara.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
-	font-family: 'Ubuntu';
-	font-style: italic;
+	font-family: 'Candara';
+	src: url('../font/Candara Bold.ttf') format('truetype');
 	font-weight: 700;
-	src:
-		local('Ubuntu Bold Italic'),
-		local('Ubuntu-BoldItalic'),
-		url(../font/ubuntu_bold_italic.woff) format('woff');
-}
-/* FONT : Muli */
-@font-face {
-	font-family: 'Muli';
 	font-style: normal;
-	font-weight: 300;
-	src:
-		local('Muli Light'),
-		local('Muli-Light'),
-		url(../font/muli_regular.woff) format('woff');
 }
 @font-face {
-	font-family: 'Muli';
+	font-family: 'Copperplate Gothic';
+	src: url('../font/CopperplateGothic-light.ttf') format('truetype');
+	font-weight: 300;
 	font-style: normal;
-	font-weight: 400;
-	src:
-		local('Muli'),
-		url(../font/muli_bold.woff) format('woff');
 }
 @font-face {
-	font-family: 'Muli';
-	font-style: italic;
-	font-weight: 300;
-	src:
-		local('Muli Light Italic'),
-		local('Muli-LightItalic'),
-		url(../font/muli_italic.woff) format('woff');
-}
-@font-face {
-	font-family: 'Muli';
-	font-style: italic;
-	font-weight: 400;
-	src:
-		local('Muli Italic'),
-		local('Muli-Italic'),
-		url(../font/muli_bold_italic.woff) format('woff');
+	font-family: 'Helvetica';
+	src: url('../font/Helvetica.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 /* reset.by Eric Meyer http://meyerweb.com/eric/tools/css/reset/ */
@@ -145,17 +106,17 @@ table {
 	border-spacing: 0;
 }
 body {
-	font-family: Corbel, Helvetica, Arial, sans-serif;
-	min-height: 740px;
+	font-family: Calibri, Helvetica, sans-serif;
+	/*min-height: 740px;*/
 
-	background: #f0f0f0; /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover,  #f0f0f0 12%, #918a6f 100%); /* FF3.6+ */
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(12%,#f0f0f0), color-stop(100%,#918a6f)); /* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(center, ellipse cover,  #f0f0f0 12%,#918a6f 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(center, ellipse cover,  #f0f0f0 12%,#918a6f 100%); /* Opera 12+ */
-	background: -ms-radial-gradient(center, ellipse cover,  #f0f0f0 12%,#918a6f 100%); /* IE10+ */
-	background: radial-gradient(ellipse at center,  #f0f0f0 12%,#918a6f 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#918a6f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+/*	background: #f0f0f0;  Old browsers 
+	background: -moz-radial-gradient(center, ellipse cover,  #f0f0f0 2%, #918a6f 100%);  FF3.6+ 
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(2%,#f0f0f0), color-stop(100%,#918a6f));  Chrome,Safari4+ 
+	background: -webkit-radial-gradient(center, ellipse cover,  #f0f0f0 2%,#918a6f 100%);  Chrome10+,Safari5.1+ 
+	background: -o-radial-gradient(center, ellipse cover,  #f0f0f0 2%,#918a6f 100%);  Opera 12+ 
+	background: -ms-radial-gradient(center, ellipse cover,  #f0f0f0 2%,#918a6f 100%);  IE10+ 
+	background: radial-gradient(ellipse at center,  #f0f0f0 2%,#918a6f 100%);  W3C 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#918a6f',GradientType=1 );  IE6-9 fallback on horizontal gradient */
 }
 b, strong {
 	font-weight: bold
@@ -164,7 +125,7 @@ i, em {
 	font-style: italic
 }
 h1 {
-	font-family: 'Permanent Marker', Ubuntu, sans-serif;
+	font-family: 'Calibri', sans-serif;
 	font-size: 128px;
 }
 /*----------------------------------------------------------------------------------------------------------*/
@@ -176,7 +137,7 @@ h1 {
 	margin: 20px auto;
 
 	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box;
-	font-family: 'Ubuntu', san-serif;
+	font-family: 'Calibri', sans-serif;
 	font-size: 48px;
 	line-height: 1.5;
 	/*border: 1px solid greenyellow;*/
@@ -188,7 +149,6 @@ h1 {
 Basically we remove the margin and make inactive steps a little bit transparent.
 */
 .impress-enabled .step {
-	margin: 0;
 	opacity: 0.8;
 	-webkit-transition: opacity 1s; -moz-transition: opacity 1s; -ms-transition: opacity 1s; -o-transition: opacity 1s; transition: opacity 1s;
 }
@@ -249,14 +209,14 @@ Basically we remove the margin and make inactive steps a little bit transparent.
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
-/* Ajouter la class "fondue" sur un slide */
-.fondue.future {
+/* Ajouter la class "fondu" sur un slide */
+.fondu.future {
 	opacity:0.1;
 }
-.fondue.present {
+.fondu.present {
 	opacity:1;
 }
-.fondue.past {
+.fondu.past {
 	opacity:0.7;
 }
 
@@ -280,14 +240,14 @@ Basically we remove the margin and make inactive steps a little bit transparent.
 	display:none;
 }
 .impress-on-botaniste {
-	background: #f0f0f0; /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover,  #f0f0f0 19%, #919f54 89%); /* FF3.6+ */
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(19%,#f0f0f0), color-stop(89%,#919f54)); /* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(center, ellipse cover,  #f0f0f0 19%,#919f54 89%); /* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(center, ellipse cover,  #f0f0f0 19%,#919f54 89%); /* Opera 12+ */
-	background: -ms-radial-gradient(center, ellipse cover,  #f0f0f0 19%,#919f54 89%); /* IE10+ */
-	background: radial-gradient(ellipse at center,  #f0f0f0 19%,#919f54 89%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#919f54',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+/*	background: #f0f0f0;  Old browsers 
+	background: -moz-radial-gradient(center, ellipse cover,  #f0f0f0 19%, #919f54 89%);  FF3.6+ 
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(19%,#f0f0f0), color-stop(89%,#919f54));  Chrome,Safari4+ 
+	background: -webkit-radial-gradient(center, ellipse cover,  #f0f0f0 19%,#919f54 89%);  Chrome10+,Safari5.1+ 
+	background: -o-radial-gradient(center, ellipse cover,  #f0f0f0 19%,#919f54 89%);  Opera 12+ 
+	background: -ms-radial-gradient(center, ellipse cover,  #f0f0f0 19%,#919f54 89%);  IE10+ 
+	background: radial-gradient(ellipse at center,  #f0f0f0 19%,#919f54 89%);  W3C 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#919f54',GradientType=1 );  IE6-9 fallback on horizontal gradient */
 }
 .impress-on-botaniste .step{
 	display: none;
@@ -296,21 +256,43 @@ Basically we remove the margin and make inactive steps a little bit transparent.
 	display: block;
 }
 /*----------------------------------------------------------------------------------------------------------*/
+
+/* général */
+.droite {
+	float: right;
+}
+.gauche {
+	float: left;
+}
+
 /* Slide : continent */
-#continent .legende {
+#continent .logo {
+	margin-right: 20px;
+	margin-top: 30px;
+}
+#continent .legende-membres {
 	opacity: 0;
 }
 #continent .carte {
 	position: relative;
 }
-.impress-on-continent #continent .legende {
+.impress-on-continent #continent .legende-membres {
 	opacity: 1;
 	-webkit-transition: opacity 1s; -moz-transition: opacity 1s; -ms-transition: opacity 1s; -o-transition: opacity 1s; transition: opacity 1s;
 	position: absolute;
-	bottom: 50px;
+	bottom: 80px;
 	left: 50%;
-	font-size: 32px;
-	color : #e16e38; /* Orange */
+	font-size: 24px;
+	/*color : #e16e38; /* Orange */
+}
+#continent .jauge {
+	width: 180px;
+	font-size: 18px;
+	color: #404040;
+}
+#continent .jauge img {
+	margin-bottom: 2px;
+	margin-left: 3px;
 }
 #continent .botaniste {
 	position: absolute;
@@ -358,7 +340,8 @@ Basically we remove the margin and make inactive steps a little bit transparent.
 	bottom: -330px;
 	left: -350px;
 	list-style-type: square;
-	font-size: 32px;
+	font-family: 'ArchitectsDaughter';
+	font-size: 28px;
 	width:1024px;
 }
 
@@ -383,6 +366,8 @@ Basically we remove the margin and make inactive steps a little bit transparent.
 	top:300px;
 	right:10px;
 	width:500px;
+	font-family: 'ArchitectsDaughter';
+	font-size: 40px;
 }
 #img-collecter {
 	position: absolute;
@@ -394,8 +379,14 @@ Basically we remove the margin and make inactive steps a little bit transparent.
 	right:100px;
 	bottom:100px;
 	width:400px;
+
+    -moz-transform: rotate(-15deg);
+	-webkit-transform: rotate(-15deg);
+	-o-transform: rotate(-15deg);
+	-ms-transform: rotate(-15deg);
+	transform: rotate(-15deg);
 }
-#collecter.present #img-outil-id {
+/*#collecter.present #img-outil-id {
     -moz-transform: rotate(-15deg);
 	-webkit-transform: rotate(-15deg);
 	-o-transform: rotate(-15deg);
@@ -407,7 +398,7 @@ Basically we remove the margin and make inactive steps a little bit transparent.
     -ms-transition-delay: 0.25s;
     -o-transition-delay: 0.25s;
     transition-delay: 0.25s;
-}
+}*/
 
 /*----------------------------------------------------------------------------------------------------------*/
 /* Slide : Saisie-titre */
