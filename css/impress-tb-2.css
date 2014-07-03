@@ -137,16 +137,47 @@ Basically we remove the margin and make inactive steps a little bit transparent.
 .gauche {
 	float: left;
 }
-
 .step {
 	font-family : Calibri;
 	font-size: 48px;
 	color: #7F7F7F;
-	/*border: solid black 10px;*/
+}
+h1 {
+	font-size: 80px;
+	margin-top: 25px;
+}
+h2 {
 }
 
-h1 {
-	font-size: 128px;
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	font-size: 36px;
+	margin: 0;
+	margin-top: 20px;
+	padding: 0;
+	list-style-type: none;
+}
+
+a, a:hover, a:visited {
+	/*color: #6D9AD7;*/
+	color: #5089D5;
+	text-decoration: none;
+}
+
+div.separateur-vertical {
+	height: 40px;
+}
+
+.plus-petit {
+	font-size: 80%;
+}
+
+.encore-plus-petit {
+	font-size: 50%;
 }
 
 .smoothy-2 {
@@ -175,7 +206,6 @@ h1 {
 .fondu.past {
 	opacity:0.7;
 }
-
 .etape {
 	font-family: 'Calibri', 'Helvetica', sans-serif;
 	color: #e16e38;
@@ -187,17 +217,83 @@ h1 {
 	-ms-transform: rotate(-15deg);
 	transform: rotate(-5deg);
 }
-
 .diapo-std {
-	width: 990px;
-	height: 660px;
+	padding-left: 20px;
+	width: 940px; /* !! compter les 20px de padding */
+	height: 720px;
 	background-image: url('../img/logo_fond.png');
 	background-repeat: no-repeat;
 	background-position: center;
+	border: solid #f4f4f4 1px;
 }
-
+.vide {
+	background: none;
+}
 .debug {
 	border: dashed green 3px;
+}
+.pied {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.avec-pied {
+	background-image: url('../img/pied_rmll_960.png');
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+.panneau-texte {
+	padding: 10px;
+	border: solid #919f54 2px;
+	text-align: center;
+	font-size: 20px;
+}
+.panneau-texte strong {
+	font-weight: bold;
+}
+.panneau-texte label {
+	font-weight: bold;
+	font-size: 32px;
+	color: #e16e38;
+}
+
+/* Diapo : rmll */
+#accueil-rmll {
+	color: black;
+	font-family: Ubuntu;
+	text-align: center;
+}
+#accueil-rmll h1 {
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 85px;
+}
+#accueil-rmll h2 {
+	font-size: 32px;
+	font-style: italic;
+	font-weight: bold;
+	margin-top: 50px;
+}
+#bloc-auteur {
+	font-size: 24px;
+	margin-top: 100px;
+}
+#bloc-auteur label {
+	font-size: 32px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+#bloc-auteur .auteur {
+	margin-top: 15px;
+	margin-bottom: 7px;
+	font-size: 35px;
+}
+#bloc-auteur .email {
+	color: #8888aa;
+}
+#bloc-auteur .url {
+	color: #a0a0a0;
 }
 
 /* Diapo : couverture */
@@ -255,17 +351,114 @@ h1 {
 }
 .fond-centrale {
 	margin-left: 90px;
-	margin-top: 70px;
+	margin-top: 30px;
+}
+
+#c-objectifs {
+	font-size: 32px;
+	font-weight: bold;
+	color: #c0c0c0;
+	position: absolute;
+	left: 280px;
+	top: 360px;
+}
+#c-grace-a {
+	font-size: 25px;
+	font-weight: bold;
+	color: #c0c0c0;
+	position: absolute;
+	left: 715px;
+	top: 340px;
+}
+#centrale .legende {
+	position: absolute;
+	font-size: 18px;
+	width: 260px;
+	text-align: center;
+}
+#centrale .legende strong {
+	font-weight: bold;
+}
+#c-texte-reseau {
+	color: #A65575;
+	left: 220px;
+	top: 110px;
+}
+#c-texte-cc {
+	color: #009FB8;
+	left: 60px;
+	top: 530px;
+}
+#c-texte-sensibilisation {
+	color: #919F54;
+	left: 355px;
+	top: 530px;
+}
+#c-texte-partenaires {
+	color: #A65575;
+	left: 620px;
+	top: 110px;
+}
+#c-texte-financement {
+	color: #009FB8;
+	left: 530px;
+	top: 465px;
+}
+#c-texte-equipe {
+	color: #919F54;
+	left: 715px;
+	top: 470px;
 }
 
 /* Diapo : réseau */
-#reseau.future {
-	/*opacity: 0;*/
+#fond-continents {
+	position: absolute;
+	opacity: 0.6;
+}
+#tas-de-gens {
+	position: absolute;
+	left: 480px;
+	top: 150px;
+	height: 400px;
+}
+#reseau-comment {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	height: 110px;
+	width: 470px;
+	font-size: 20px;
 }
 
 /* Diapo : bien commun */
+#tas-de-rouages {
+	position: absolute;
+	left: 500px;
+	top: 50px;
+	height: 500px;
+}
+#bien-commun-comment {
+	position: absolute;
+	left: 40px;
+	top: 130px;
+	height: 415px;
+	width: 330px;
+}
 
 /* Diapo : sensibiliser */
+#tas-d-outils {
+	position: absolute;
+	left: 500px;
+	top: 50px;
+	height: 500px;
+}
+#sensibiliser-outils {
+	position: absolute;
+	left: 40px;
+	top: 170px;
+	height: 350px;
+	width: 330px;
+}
 
 /* Diapo : association */
 .impress-on-association #continent {
@@ -369,4 +562,18 @@ h1 {
 	position:absolute;
 	bottom:10px;
 	margin:0 auto;
+}
+
+/* Diapo : merci */
+#qr-code {
+	position: absolute;
+	right:100px;
+	bottom:120px;
+	width:300px;
+
+    -moz-transform: rotate(-8deg);
+	-webkit-transform: rotate(-8deg);
+	-o-transform: rotate(-8deg);
+	-ms-transform: rotate(-8deg);
+	transform: rotate(-8deg);
 }

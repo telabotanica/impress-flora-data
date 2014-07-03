@@ -42,10 +42,28 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			</p>
 		</div>
 
-		<div id="impress" data-width="1024" data-height="768" data-min-scale="1" data-max-scale="4">
+		<div id="impress" data-width="1024" data-height="768" data-min-scale="0.1" data-max-scale="4">
 
 			<div id="overview-plan" class="step" data-x="0" data-y="1500" data-scale="13.5"></div>
 
+			<div id="accueil-rmll" class="step diapo-std avec-pied fondu" data-x="-7000" data-y="-800" data-scale="1">
+				<h1>Tela Botanica - données botaniques libres</h1>
+				<h2> Découverte sur le terrain du parcours de la donnée botanique</h2>
+				<div id="bloc-auteur">
+					<label>
+						Présentée par :
+					</label>
+					<div class="auteur">
+						<!--Audrey TOCCO &-->Adeline MOREAU & Jean-Pascal MILCENT
+					</div>
+					<!--<span class="email">audrey@tela-botanica.org</span>-->
+					<span class="email">adeline@tela-botanica.org</span>
+					- 
+					<span class="email">jpm@tela-botanica.org</span>
+					<br/><br/>
+					<span class="url">http://www.tela-botanica.org</span>
+				</div>
+			</div>
 
 			<div id="couverture" class="step fondu" data-x="-4200" data-y="-800" data-scale="3">
 				<div class="entete-titre">
@@ -67,7 +85,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			</div>
 
 
-			<div id="centrale" class="step diapo-std fondu" data-x="0" data-y="0" data-scale="3">
+			<div id="centrale" class="step diapo-std avec-pied" data-x="0" data-y="0" data-scale="3">
 				<div class="entete-titre">
 					<div class="carreaux">
 						<div class="carreau"></div>
@@ -84,12 +102,48 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 					</div>
 				</div>
 				<img src="img/fond_centrale.png" class="fond-centrale" />
+				<div id="c-objectifs">
+					Objectifs
+				</div>
+				<div id="c-grace-a">
+					Grâce à
+				</div>
+				<div id="c-texte-reseau" class="legende">
+					Mettre en réseau les citoyens autour de projets floristiques
+				</div>
+				<div id="c-texte-cc" class="legende">
+					Faire de la botanique un bien commun participatif
+				</div>
+				<div id="c-texte-sensibilisation" class="legende">
+					Sensibiliser et former sur le monde des plantes
+				</div>
+				<div id="c-texte-partenaires" class="legende">
+					<strong>Partenaires</strong>
+					<br/>
+					Instituts de recherche
+					<br/>
+					Collectivités
+					<br/>
+					Bureaux d'études et associations
+				</div>
+				<div id="c-texte-financement" class="legende">
+					<strong>Financement</strong>
+					<br/>
+					Fondations
+					<br/>
+					Fonds publics
+				</div>
+				<div id="c-texte-equipe" class="legende">
+					<strong>Équipe</strong>
+					<br/>
+					15 salariés
+				</div>
 			</div>
 
 			<div id="zoom-centrale-reseau" class="step" data-x="-500" data-y="-200" data-scale="1">
 			</div>
 
-			<div id="reseau" class="step diapo-std fondu" data-x="-1000" data-y="-2200" data-z="-1000" data-rotate="-90">
+			<div id="reseau" class="step diapo-std avec-pied fondu" data-x="-1000" data-y="-2200" data-z="-1000" data-rotate="-90">
 				<div class="entete-titre">
 					<div class="carreaux">
 						<div class="carreau"></div>
@@ -97,11 +151,24 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 						<div class="carreau"></div>
 					</div>
 					<div class="entete-texte titre-odp">
-						Mettre en réseau
+						Mettre en réseau les
 						<br/>
-						les gens du coin
+						citoyens autour de
+						<br/>
+						projets floristiques
 					</div>
 				</div>
+				<div id="reseau-comment" class="panneau-texte">
+					<label>Comment ?</label>
+					<br/>
+					Monter et accompagner <strong>vos projets</strong> botaniques
+					<br/>
+					Un <strong>annuaire en ligne</strong> des Telabotanistes
+					<br/>
+					Une <strong>lettre d'actualités</strong> hebdomadaire sur la botanique
+				</div>
+				<img src="img/continents_850.png" id="fond-continents" />
+				<img src="img/tas_de_gens_500.png" id="tas-de-gens" />
 			</div>
 
 			<div id="retour-centrale-1" class="step" data-x="0" data-y="0" data-scale="3">
@@ -110,7 +177,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			<div id="zoom-centrale-bien-commun" class="step" data-x="-950" data-y="400" data-scale="1">
 			</div>
 
-			<div id="bien-commun" class="step diapo-std fondu" data-x="0" data-y="-2200" data-z="-1000" data-rotate="-90">
+			<div id="bien-commun" class="step diapo-std avec-pied fondu" data-x="0" data-y="-2200" data-z="-1000" data-rotate="-90">
 				<div class="entete-titre">
 					<div class="carreaux">
 						<div class="carreau"></div>
@@ -118,11 +185,27 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 						<div class="carreau"></div>
 					</div>
 					<div class="entete-texte titre-odp">
-						Faire du bien commun
+						Faire de la botanique
 						<br/>
-						avec la botanique
+						un bien commun
+						<br/>
+						participatif
 					</div>
 				</div>
+				<div id="bien-commun-comment" class="panneau-texte">
+					<label>Comment ?</label>
+					<br/><br/>
+					Une base de données libres,	<strong>FloraData et eVeg</strong>
+					<br/><br/>
+					Carnet de terrain numérique, <strong>Carnet en Ligne</strong>
+					<br/><br/>
+					Identifier ses plantes à l'aide du réseau Tela Botanica, <strong>IdentiPlante</strong>
+					<br/><br/>
+					Une encyclopédie collaborative illustrée de la flore, <strong>eFlore</strong>
+					<br/><br/>
+					Enregistrer et diffuser le contenu de vos collections d'herbiers, <strong>Collections en Ligne</strong>
+				</div>
+				<img src="img/tas_de_rouages_500.png" id="tas-de-rouages" />
 			</div>
 
 			<div id="retour-centrale-2" class="step" data-x="0" data-y="0" data-scale="3">
@@ -131,7 +214,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			<div id="zoom-centrale-sensibiliser" class="step" data-x="-100" data-y="500" data-scale="1">
 			</div>
 
-			<div id="sensibiliser" class="step diapo-std fondu" data-x="1000" data-y="-2200" data-z="-1000" data-rotate="-90">
+			<div id="sensibiliser" class="step diapo-std avec-pied fondu" data-x="1000" data-y="-2200" data-z="-1000" data-rotate="-90">
 				<div class="entete-titre">
 					<div class="carreaux">
 						<div class="carreau"></div>
@@ -139,11 +222,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 						<div class="carreau"></div>
 					</div>
 					<div class="entete-texte titre-odp">
-						Sensibiliser
+						Sensibiliser et
 						<br/>
-						avec des outils
+						former sur le
+						<br/>
+						monde des plantes
 					</div>
 				</div>
+				<div id="sensibiliser-outils" class="panneau-texte">
+					<label>Outils Tela Botanica</label>
+					<br/><br/>
+					Impliquer les citoyens dans la connaissance de la nature, <strong>Sciences Participatives</strong>
+					<br/><br/>
+					Cours de botanique et sorties de terrain pour professionnels et particuliers, <strong>Formations</strong>
+					<br/><br/>
+					Une mallette pédagogique pour construire des ateliers autour de la botanique, <strong>Pousse</strong>
+				</div>
+				<img src="img/tas_d_outils_500.png" id="tas-d-outils" />
 			</div>
 
 			<div id="retour-centrale-3" class="step" data-x="0" data-y="0" data-scale="3">
@@ -214,20 +309,72 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			<div id="overview" class="step" data-x="0" data-y="1500" data-scale="13.5"></div>
 
 
-			<div id="techno-1" class="step diapo-std" data-x="3800" data-y="-1600" data-scale="1.6" data-rotate="-20">
-				<h1>Technologies - outils</h1>
+			<div id="techno-1" class="step diapo-std avec-pied fondu" data-x="3800" data-y="-1600" data-scale="1.6" data-rotate="-20">
+				<h1>Technologies utilisées</h1>
+				<div class="separateur-vertical"></div>
+				<ul>
+					<li>
+						HTML 5 + CSS3
+					</li>
+					<li>
+						Bootstrap 2 & 3 + jQuery
+					</li>
+					<li>
+						PHP 5.4 & 5.5 (Webservices & Applications Web)
+					</li>
+					<li>
+						MySQL 5.6
+					</li>
+					<li>
+						GWT 2.5 (Applications Web historiques)
+					</li>
+					<li>
+					</li>
+					<li>
+					</li>
+				</ul>
 			</div>
 
-			<div id="techno-2" class="step diapo-std" data-x="3800" data-y="-300" data-scale="1.6" data-rotate="-20">
-				<h1>Technologies - bibliothèques</h1>
+			<div id="techno-2" class="step diapo-std avec-pied fondu" data-x="3800" data-y="-300" data-scale="1.6" data-rotate="-20">
+				<h1>Sources de données</h1>
+				<div class="separateur-vertical"></div>
+				<ul>
+					<li>
+						OpenStreetMap - contours de zones géographiques)
+					</li>
+					<li>
+						OpenStreetMap + OsmFr - fonds de cartes
+					</li>
+				</ul>
 			</div>
 
-			<div id="techno-3" class="step diapo-std" data-x="3800" data-y="1000" data-scale="1.6" data-rotate="-20">
-				<h1>Technologies - liens</h1>
+			<div id="techno-3" class="step diapo-std avec-pied fondu" data-x="3800" data-y="1000" data-scale="1.6" data-rotate="-20">
+				<h1>Liens</h1>
+				<div class="separateur-vertical"></div>
+				<ul>
+					<li>
+						<a href="http://svn.tela-botanica.net/websvn/">WebSVN de Tela Botanica</a>
+					</li>
+					<li>
+						<a href="https://github.com/telabotanica/">GitHub/telabotanica</a>
+					</li>
+					<li>
+						<a href="www.tela-botanica.org/wikini/DevInformatiques/">Wiki des développements informatiques de TB</a>
+					</li>
+					<li>
+						<a href="http://yeswiki.net/">YesWiki, le wiki collaboratif</a>
+					</li>
+				</ul>
 			</div>
 
-			<div id="merci" class="step diapo-std" data-x="5800" data-y="5500" data-scale="1.5">
-				<h1>Merci !</h1>
+			<div id="merci" class="step diapo-std avec-pied fondu" data-x="5800" data-y="5500" data-scale="1.5">
+				<h1>Merci de votre attention</h1>
+				<br/>
+				<h2>Pour en savoir plus sur Tela Botanica :</h2>
+				<a class="plus-petit" href="http://www.tela-botanica.org/reseau/presentation">
+					http://www.tela-botanica.org/reseau/presentation
+				</a>
+				<img id="qr-code" src="img/qr-presentation.png" alt="http://www.tela-botanica.org/reseau/presentation" />
 			</div>
 
 		</div>
