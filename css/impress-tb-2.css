@@ -171,6 +171,9 @@ a, a:hover, a:visited {
 div.separateur-vertical {
 	height: 40px;
 }
+div.separateur-vertical-moyen {
+	height: 25px;
+}
 
 .plus-petit {
 	font-size: 80%;
@@ -207,15 +210,16 @@ div.separateur-vertical {
 	opacity:0.7;
 }
 .etape {
-	font-family: 'Calibri', 'Helvetica', sans-serif;
+	font-family: 'Calibri', Ubuntu, Helvetica sans-serif;
 	color: #e16e38;
 	text-align: right;
+	line-height: 44px;
 
-	-moz-transform: rotate(-20deg);
+	/*-moz-transform: rotate(-20deg);
 	-webkit-transform: rotate(-15deg);
 	-o-transform: rotate(-15deg);
 	-ms-transform: rotate(-15deg);
-	transform: rotate(-5deg);
+	transform: rotate(-5deg);*/
 }
 .diapo-std {
 	padding-left: 20px;
@@ -224,13 +228,13 @@ div.separateur-vertical {
 	background-image: url('../img/logo_fond.png');
 	background-repeat: no-repeat;
 	background-position: center;
-	border: solid #f4f4f4 1px;
+	/*border: solid #f4f4f4 1px;*/
 }
 .vide {
 	background: none;
 }
 .debug {
-	border: dashed green 3px;
+	/*border: dashed green 3px;*/
 }
 .pied {
 	position: absolute;
@@ -255,6 +259,27 @@ div.separateur-vertical {
 .panneau-texte label {
 	font-weight: bold;
 	font-size: 32px;
+	color: #e16e38;
+}
+
+.img-plein-ecran {
+	width: 960px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.vert {
+	color: #919F54;
+}
+.violet {
+	color: #A65575;
+}
+.bleu {
+	color: #009FB8;
+}
+
+.nombre {
 	color: #e16e38;
 }
 
@@ -380,17 +405,14 @@ div.separateur-vertical {
 	font-weight: bold;
 }
 #c-texte-reseau {
-	color: #A65575;
 	left: 220px;
 	top: 110px;
 }
 #c-texte-cc {
-	color: #009FB8;
 	left: 60px;
 	top: 530px;
 }
 #c-texte-sensibilisation {
-	color: #919F54;
 	left: 355px;
 	top: 530px;
 }
@@ -423,11 +445,33 @@ div.separateur-vertical {
 }
 #reseau-comment {
 	position: absolute;
-	right: 20px;
-	top: 10px;
+	left: 20px;
+	top: 450px;
 	height: 110px;
 	width: 470px;
 	font-size: 20px;
+	background-color: rgba(255, 255, 255, 0.6);
+	z-index: 200;
+}
+#nb-tb {
+	position: absolute;
+	top: 40px;
+	right: 32px;
+	font-weight: bold;
+	font-family: 'Candara', 'Calibri', Ubuntu;
+	font-size: 28px;
+	width: 300px;
+}
+#profils-tb {
+	position: absolute;
+	top: 240px;
+	left: 40px;
+	padding-left: 40px;
+	font-family: 'Candara', 'Calibri', Ubuntu;
+	font-size: 28px;
+	width: 280px;
+	background-color: rgba(255, 255, 255, 0.6);
+	z-index: 200;
 }
 
 /* Diapo : bien commun */
@@ -442,7 +486,7 @@ div.separateur-vertical {
 	left: 40px;
 	top: 130px;
 	height: 415px;
-	width: 330px;
+	width: 370px;
 }
 
 /* Diapo : sensibiliser */
@@ -487,29 +531,25 @@ div.separateur-vertical {
 	cursor: pointer;
 }
 
-/* Diapo : Collecter */
-#collecter-cadre {
-	width:1024px;
-	height:700px;
-}
+/* Diapo : Collecte */
 #collecter-txt {
 	position: absolute;
-	top:300px;
+	top:120px;
 	right:10px;
-	width:500px;
-	font-family: 'ArchitectsDaughter';
-	font-size: 40px;
+	width:400px;
+	font-size: 36px;
 }
 #img-collecter {
 	position: absolute;
-	top:300px;
-	width:500px;
+	top: 140px;
+	left: 10px;
+	width: 500px;
 }
 #img-outil-id {
 	position: absolute;
-	right:100px;
-	bottom:100px;
-	width:400px;
+	right:70px;
+	bottom:170px;
+	width:380px;
 
     -moz-transform: rotate(-15deg);
 	-webkit-transform: rotate(-15deg);
@@ -519,49 +559,114 @@ div.separateur-vertical {
 }
 
 /* Diapo : Saisie-titre */
-#saisie-titre h1 {
+#img-accueil {
 	position: absolute;
-	top:-400px;
-	left:-200px;
-}
-
-/* Diapo : Saisie */
-.saisie-site {
-	text-align: right;
-	font-family: 'Permanent Marker', Ubuntu, sans-serif;
+	left: 0;
+	height: 650px;
 }
 
 /* Diapo : Saisie-cel */
-.img-cel-interface {
-	width:1024px;
+#img-saisie-cel {
+	top: 120px;
 }
-.cel-fonctions {
+#interet-personnel {
+	position: absolute;
+	bottom: 15px;
+	width: 960px;
 	text-align: center;
-	width:800px;
 }
-.etape-01 {
 
+/* Diapo : partage */
+#img-cel-partage {
+	position: absolute;
+	top: 120px;
+	left: 100px;
 }
+#partage-collectif {
+	position: absolute;
+	top: 410px;
+	left: 20px;
+}
+#premier-pas {
+	position: absolute;
+	top: 480px;
+}
+
 
 /* Diapo : partage-reseau */
-#partage-reseau {
-	width:1024px;
-	height:800px;
+#img-chat {
+	position: absolute;
+	top: 50px;
+	left: 50px;
 }
-.img-chat {
-	position:absolute;
-	top:10px;
-	left:10px;
+#img-site-profil {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 370px;
 }
-.img-site-profil {
-	position:absolute;
-	top:10px;
-	right:10px;
+#se-connaitre {
+	position: absolute;
+	bottom: 160px;
+	margin: 0 auto;
 }
-.etape-03 {
-	position:absolute;
-	bottom:10px;
-	margin:0 auto;
+
+/* Diapo : visualisation */
+#img-site-bota {
+	position: absolute;
+	top: 110px;
+	left: 10px;
+	width: 520px;
+}
+#img-widget-carto {
+	position: absolute;
+	top: 230px;
+	right: 35px;
+	width: 350px;
+}
+#diffusion-connaissance {
+	position: absolute;
+	top: 60px;
+	right: 10px;
+	width: 380px;
+	font-size: 32px;
+}
+#valoriser-connaissances {
+	position: absolute;
+	bottom: 135px;
+	left: 0;
+}
+
+/* Diapo : validation */
+#flora-data-illustrations {
+	margin-top: 20px;
+}
+#obtenir-reactions {
+	position: absolute;
+	top: 480px;
+	right: 40px;
+	font-size: 32px;
+	width: 550px;
+}
+
+/* Diapo : validation-identiplante */
+#img-identiplante {
+	width: 580px;
+	position: absolute;
+	right: 50px;
+	top: 200px;
+}
+#plateforme-discussion {
+	font-family: 'Candara', 'Calibri', Ubuntu, Helvetica;
+	font-size: 32px;
+	font-style: italic;
+	width: 200px;
+	position: absolute;
+	left: 60px;
+	top: 250px;
+}
+#plateforme-discussion a {
+	font-style: normal;
 }
 
 /* Diapo : merci */
