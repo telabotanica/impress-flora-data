@@ -682,3 +682,23 @@ div.separateur-vertical-moyen {
 	-ms-transform: rotate(-8deg);
 	transform: rotate(-8deg);
 }
+
+/*
+	Permet de générer un PDF pas trop immonde
+	Mode d'emploi: désactiver Javascript, et imprimer dans un fichier en PDF
+	Selon le navigateur, penser à :
+		- imprimer les images de fond
+		- désactiver les entêtes et pieds de page
+		- imprimer en orientation paysage
+	À la fin, utiliser éventuellement PdfMod pour supprimer les diapos vides
+*/
+@media print {
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+
+  .fallback-message { display: none; }
+  @page land {size: landscape;}
+  .step { page-break-inside: avoid; page-break-after: always; border: none; margin-top: 100px; }
+  .step img { max-height: 100%; }
+}
