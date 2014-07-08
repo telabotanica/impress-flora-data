@@ -138,7 +138,7 @@ Basically we remove the margin and make inactive steps a little bit transparent.
 	float: left;
 }
 .step {
-	font-family : Calibri;
+	font-family : 'Calibri', Ubuntu, Helvetica, sans-serif;
 	font-size: 48px;
 	color: #7F7F7F;
 }
@@ -214,12 +214,6 @@ div.separateur-vertical-moyen {
 	color: #e16e38;
 	text-align: right;
 	line-height: 44px;
-
-	/*-moz-transform: rotate(-20deg);
-	-webkit-transform: rotate(-15deg);
-	-o-transform: rotate(-15deg);
-	-ms-transform: rotate(-15deg);
-	transform: rotate(-5deg);*/
 }
 .diapo-std {
 	padding-left: 20px;
@@ -228,7 +222,6 @@ div.separateur-vertical-moyen {
 	background-image: url('../img/logo_fond.png');
 	background-repeat: no-repeat;
 	background-position: center;
-	/*border: solid #f4f4f4 1px;*/
 }
 .vide {
 	background: none;
@@ -286,7 +279,6 @@ div.separateur-vertical-moyen {
 /* Diapo : rmll */
 #accueil-rmll {
 	color: black;
-	font-family: Ubuntu;
 	text-align: center;
 }
 #accueil-rmll h1 {
@@ -699,7 +691,6 @@ div.separateur-vertical-moyen {
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
-
   .fallback-message { display: none; }
   @page land {size: landscape;}
   .step { page-break-inside: avoid; page-break-after: always; border: none; margin-top: 100px; }
