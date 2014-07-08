@@ -583,6 +583,7 @@ div.separateur-vertical-moyen {
 	left: 100px;
 }
 #partage-collectif {
+	font-family: 'Candara';
 	position: absolute;
 	top: 410px;
 	left: 20px;
@@ -625,6 +626,7 @@ div.separateur-vertical-moyen {
 	width: 350px;
 }
 #diffusion-connaissance {
+	font-family: 'Candara';
 	position: absolute;
 	top: 60px;
 	right: 10px;
@@ -642,6 +644,7 @@ div.separateur-vertical-moyen {
 	margin-top: 20px;
 }
 #obtenir-reactions {
+	font-family: 'Candara';
 	position: absolute;
 	top: 480px;
 	right: 40px;
