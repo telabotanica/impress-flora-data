@@ -19,47 +19,97 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	Author	 : jpm
 */
 
+/* FONT : Permanent Marker */
 @font-face {
-	font-family: 'ArialMT';
-	src: url('../font/Arial MT.ttf') format('truetype');
-	font-weight: normal;
+	font-family: 'Permanent Marker';
 	font-style: normal;
+	font-weight: 400;
+	src:
+		local('Permanent Marker'),
+		local('PermanentMarker'),
+		url(../font/permanent_marker.woff) format('woff');
+}
+/* FONT : Balthazar */
+@font-face {
+  font-family: 'Balthazar';
+  font-style: normal;
+  font-weight: 400;
+  src:
+	local('Balthazar Regular'),
+	local('Balthazar-Regular'),
+	url(../font/Balthazar.woff) format('woff');
+}
+/* FONT : Ubuntu */
+@font-face {
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local('Ubuntu'),
+		url(../font/ubuntu_regular.woff) format('woff');
 }
 @font-face {
-	font-family: 'Calibri';
-	src: url('../font/Calibri.ttf') format('truetype');
-	font-weight: normal;
+	font-family: 'Ubuntu';
 	font-style: normal;
+	font-weight: 700;
+	src:
+		local('Ubuntu Bold'),
+		local('Ubuntu-Bold'),
+		url(../font/ubuntu_bold.woff) format('woff');
 }
 @font-face {
-	font-family: 'Calibri';
-	src: url('../font/Calibri Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
+	font-family: 'Ubuntu';
+	font-style: italic;
+	font-weight: 400;
+	src:
+		local('Ubuntu Italic'),
+		local('Ubuntu-Italic'),
+		url(../font/ubuntu_italic.woff) format('woff');
 }
 @font-face {
-	font-family: 'Candara';
-	src: url('../font/Candara.ttf') format('truetype');
-	font-weight: normal;
+	font-family: 'Ubuntu';
+	font-style: italic;
+	font-weight: 700;
+	src:
+		local('Ubuntu Bold Italic'),
+		local('Ubuntu-BoldItalic'),
+		url(../font/ubuntu_bold_italic.woff) format('woff');
+}
+/* FONT : Muli */
+@font-face {
+	font-family: 'Muli';
 	font-style: normal;
+	font-weight: 300;
+	src:
+		local('Muli Light'),
+		local('Muli-Light'),
+		url(../font/muli_regular.woff) format('woff');
 }
 @font-face {
-	font-family: 'Candara';
-	src: url('../font/Candara Bold.ttf') format('truetype');
-	font-weight: bold;
+	font-family: 'Muli';
 	font-style: normal;
+	font-weight: 400;
+	src:
+		local('Muli'),
+		url(../font/muli_bold.woff) format('woff');
 }
 @font-face {
-	font-family: 'Copperplate Gothic';
-	src: url('../font/CopperplateGothic-light.ttf') format('truetype');
-	font-weight: lighter;
-	font-style: normal;
+	font-family: 'Muli';
+	font-style: italic;
+	font-weight: 300;
+	src:
+		local('Muli Light Italic'),
+		local('Muli-LightItalic'),
+		url(../font/muli_italic.woff) format('woff');
 }
 @font-face {
-	font-family: 'Helvetica';
-	src: url('../font/Helvetica.otf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'Muli';
+	font-style: italic;
+	font-weight: 400;
+	src:
+		local('Muli Italic'),
+		local('Muli-Italic'),
+		url(../font/muli_bold_italic.woff) format('woff');
 }
 
 /* reset.by Eric Meyer http://meyerweb.com/eric/tools/css/reset/ */
@@ -98,7 +148,7 @@ Basically we remove the margin and make inactive steps a little bit transparent.
 
 /* IMPRESS NOT SUPPORTED STYLES */
 .fallback-message {
-	font-family: sans-serif;
+	font-family: Ubuntu, Helvetiva, sans-serif;
 	line-height: 1.3;
 
 	display: none;
@@ -138,7 +188,7 @@ Basically we remove the margin and make inactive steps a little bit transparent.
 	float: left;
 }
 .step {
-	font-family : 'Calibri', Ubuntu, Helvetica, sans-serif;
+	font-family : Ubuntu, Helvetica, sans-serif;
 	font-size: 48px;
 	color: #7F7F7F;
 }
@@ -210,12 +260,14 @@ div.separateur-vertical-moyen {
 	opacity:0.7;
 }
 .etape {
-	font-family: 'Calibri', Ubuntu, Helvetica sans-serif;
+	font-family: Ubuntu, Helvetica sans-serif;
 	color: #e16e38;
 	text-align: right;
 	line-height: 44px;
+	font-size: 44px;
 }
 .diapo-std {
+	font-family: Ubuntu, Helvetica, sans-serif;
 	padding-left: 20px;
 	width: 940px; /* !! compter les 20px de padding */
 	height: 720px;
@@ -342,7 +394,7 @@ div.separateur-vertical-moyen {
 }
 .entete-nom {
 	color: #e26d38;
-	font-family: Calibri;
+	font-family: Ubuntu, Helvetica, sans-serif;
 	font-size: 45px;
 	font-weight: bold;
 }
@@ -360,10 +412,10 @@ div.separateur-vertical-moyen {
 #centrale {
 }
 .titre-odp {
-	font-family : 'Copperplate Gothic';
+	font-family : Balthazar, Ubuntu;
+	font-variant: small-caps;
 	color: #919191;
-	font-weight: lighter;
-	font-size: 30px;
+	font-size: 33px;
 }
 .fond-centrale {
 	margin-left: 90px;
@@ -371,7 +423,7 @@ div.separateur-vertical-moyen {
 }
 
 #c-objectifs {
-	font-size: 32px;
+	font-size: 25px;
 	font-weight: bold;
 	color: #c0c0c0;
 	position: absolute;
@@ -379,7 +431,7 @@ div.separateur-vertical-moyen {
 	top: 360px;
 }
 #c-grace-a {
-	font-size: 25px;
+	font-size: 22px;
 	font-weight: bold;
 	color: #c0c0c0;
 	position: absolute;
@@ -388,7 +440,7 @@ div.separateur-vertical-moyen {
 }
 #centrale .legende {
 	position: absolute;
-	font-size: 18px;
+	font-size: 16px;
 	width: 260px;
 	text-align: center;
 }
@@ -440,7 +492,7 @@ div.separateur-vertical-moyen {
 	top: 450px;
 	height: 110px;
 	width: 470px;
-	font-size: 20px;
+	font-size: 18px;
 	background-color: rgba(255, 255, 255, 0.6);
 	z-index: 200;
 }
@@ -449,7 +501,6 @@ div.separateur-vertical-moyen {
 	top: 40px;
 	right: 32px;
 	font-weight: bold;
-	font-family: 'Candara', 'Calibri', Ubuntu;
 	font-size: 28px;
 	width: 300px;
 }
@@ -458,7 +509,6 @@ div.separateur-vertical-moyen {
 	top: 240px;
 	left: 40px;
 	padding-left: 40px;
-	font-family: 'Candara', 'Calibri', Ubuntu;
 	font-size: 28px;
 	width: 280px;
 	background-color: rgba(255, 255, 255, 0.6);
@@ -478,6 +528,7 @@ div.separateur-vertical-moyen {
 	top: 130px;
 	height: 415px;
 	width: 370px;
+	font-size: 19px;
 }
 
 /* Diapo : sensibiliser */
@@ -574,7 +625,7 @@ div.separateur-vertical-moyen {
 	left: 100px;
 }
 #partage-collectif {
-	font-family: 'Candara';
+	font-family: Muli, Ubuntu, Helvetica, sans-serif;
 	position: absolute;
 	top: 410px;
 	left: 20px;
@@ -617,12 +668,12 @@ div.separateur-vertical-moyen {
 	width: 350px;
 }
 #diffusion-connaissance {
-	font-family: 'Candara';
+	font-family: Muli, Ubuntu, Helvetica, sans-serif;
 	position: absolute;
 	top: 60px;
 	right: 10px;
 	width: 380px;
-	font-size: 32px;
+	font-size: 26px;
 }
 #valoriser-connaissances {
 	position: absolute;
@@ -635,7 +686,7 @@ div.separateur-vertical-moyen {
 	margin-top: 20px;
 }
 #obtenir-reactions {
-	font-family: 'Candara';
+	font-family: Muli, Ubuntu, Helvetica, sans-serif;
 	position: absolute;
 	top: 480px;
 	right: 40px;
@@ -651,8 +702,8 @@ div.separateur-vertical-moyen {
 	top: 140px;
 }
 #plateforme-discussion {
-	font-family: 'Candara', 'Calibri', Ubuntu, Helvetica;
-	font-size: 32px;
+	font-family: Muli, Ubuntu, Helvetica, sans-serif;
+	font-size: 30px;
 	font-style: italic;
 	width: 200px;
 	position: absolute;
