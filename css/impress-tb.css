@@ -34,7 +34,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 @font-face {
 	font-family: 'Calibri';
 	src: url('../font/Calibri Bold.ttf') format('truetype');
-	font-weight: 700;
+	font-weight: bold;
 	font-style: normal;
 }
 @font-face {
@@ -46,13 +46,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 @font-face {
 	font-family: 'Candara';
 	src: url('../font/Candara Bold.ttf') format('truetype');
-	font-weight: 700;
+	font-weight: bold;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Copperplate Gothic';
 	src: url('../font/CopperplateGothic-light.ttf') format('truetype');
-	font-weight: 300;
+	font-weight: lighter;
 	font-style: normal;
 }
 @font-face {
@@ -83,69 +83,9 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after, q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-body {
-	font-family: Calibri, Helvetica, sans-serif;
-	/*min-height: 740px;*/
-
-/*	background: #f0f0f0;  Old browsers 
-	background: -moz-radial-gradient(center, ellipse cover,  #f0f0f0 2%, #918a6f 100%);  FF3.6+ 
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(2%,#f0f0f0), color-stop(100%,#918a6f));  Chrome,Safari4+ 
-	background: -webkit-radial-gradient(center, ellipse cover,  #f0f0f0 2%,#918a6f 100%);  Chrome10+,Safari5.1+ 
-	background: -o-radial-gradient(center, ellipse cover,  #f0f0f0 2%,#918a6f 100%);  Opera 12+ 
-	background: -ms-radial-gradient(center, ellipse cover,  #f0f0f0 2%,#918a6f 100%);  IE10+ 
-	background: radial-gradient(ellipse at center,  #f0f0f0 2%,#918a6f 100%);  W3C 
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#918a6f',GradientType=1 );  IE6-9 fallback on horizontal gradient */
-}
-b, strong {
-	font-weight: bold
-}
-i, em {
-	font-style: italic
-}
-h1 {
-	font-family: 'Calibri', sans-serif;
-	font-size: 128px;
-}
-/*----------------------------------------------------------------------------------------------------------*/
-/* IMPRESS*/
-.step {
-	position: relative;
-	/*width: 900px;*/
-	padding: 40px;
-	margin: 20px auto;
-
-	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box;
-	font-family: 'Calibri', sans-serif;
-	font-size: 48px;
-	line-height: 1.5;
-	/*border: 1px solid greenyellow;*/
-}
 
 /*
 ... and we enhance the styles for impress.js.
-
 Basically we remove the margin and make inactive steps a little bit transparent.
 */
 .impress-enabled .step {
@@ -156,7 +96,6 @@ Basically we remove the margin and make inactive steps a little bit transparent.
 	opacity: 1;
 }
 
-/*----------------------------------------------------------------------------------------------------------*/
 /* IMPRESS NOT SUPPORTED STYLES */
 .fallback-message {
 	font-family: sans-serif;
@@ -190,7 +129,59 @@ Basically we remove the margin and make inactive steps a little bit transparent.
 /*----------------------------------------------------------------------------------------------------------*/
 /* Memento */
 /*color : #e16e38; /* Orange */
-/*color: #919f54;/* Vert foncé*/
+/*color: #919f54;/* Taupe */
+
+.droite {
+	float: right;
+}
+.gauche {
+	float: left;
+}
+.step {
+	font-family : 'Calibri', Ubuntu, Helvetica, sans-serif;
+	font-size: 48px;
+	color: #7F7F7F;
+}
+h1 {
+	font-size: 80px;
+	margin-top: 25px;
+}
+h2 {
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	font-size: 36px;
+	margin: 0;
+	margin-top: 20px;
+	padding: 0;
+	list-style-type: none;
+}
+
+a, a:hover, a:visited {
+	/*color: #6D9AD7;*/
+	color: #5089D5;
+	text-decoration: none;
+}
+
+div.separateur-vertical {
+	height: 40px;
+}
+div.separateur-vertical-moyen {
+	height: 25px;
+}
+
+.plus-petit {
+	font-size: 80%;
+}
+
+.encore-plus-petit {
+	font-size: 50%;
+}
 
 .smoothy-2 {
 	-webkit-border-radius: 2px;
@@ -208,8 +199,7 @@ Basically we remove the margin and make inactive steps a little bit transparent.
 	border-radius: 50px;
 }
 
-/*----------------------------------------------------------------------------------------------------------*/
-/* Ajouter la class "fondu" sur un slide */
+/* Ajouter la class "fondu" sur une diapo */
 .fondu.future {
 	opacity:0.1;
 }
@@ -219,114 +209,293 @@ Basically we remove the margin and make inactive steps a little bit transparent.
 .fondu.past {
 	opacity:0.7;
 }
-
-/*----------------------------------------------------------------------------------------------------------*/
-/* Classe pour le texte concernant les étapes de la coopération */
 .etape {
-	font-family: 'Permanent Marker', Ubuntu, sans-serif;
+	font-family: 'Calibri', Ubuntu, Helvetica sans-serif;
 	color: #e16e38;
 	text-align: right;
-
-	-moz-transform: rotate(-20deg);
-	-webkit-transform: rotate(-15deg);
-	-o-transform: rotate(-15deg);
-	-ms-transform: rotate(-15deg);
-	transform: rotate(-5deg);
+	line-height: 44px;
+}
+.diapo-std {
+	padding-left: 20px;
+	width: 940px; /* !! compter les 20px de padding */
+	height: 720px;
+}
+.avec-fond {
+	background: url('../img/logo_fond.png') no-repeat center;
+}
+.vide {
+	background: none;
+}
+.debug {
+	/*border: dashed green 3px;*/
+}
+.pied {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.avec-pied {
+	/* Pour ajouter un bandeau de pied, créer une image de 960 de large sur 120 de haut */
+	/* background: url('../img/pied_rmll_960.png') no-repeat left bottom; */
 }
 
-/*----------------------------------------------------------------------------------------------------------*/
-/* Slide : Botaniste */
-#botaniste {
-	display:none;
+.panneau-texte {
+	padding: 10px;
+	border: solid #919f54 2px;
+	text-align: center;
+	font-size: 20px;
 }
-.impress-on-botaniste {
-/*	background: #f0f0f0;  Old browsers 
-	background: -moz-radial-gradient(center, ellipse cover,  #f0f0f0 19%, #919f54 89%);  FF3.6+ 
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(19%,#f0f0f0), color-stop(89%,#919f54));  Chrome,Safari4+ 
-	background: -webkit-radial-gradient(center, ellipse cover,  #f0f0f0 19%,#919f54 89%);  Chrome10+,Safari5.1+ 
-	background: -o-radial-gradient(center, ellipse cover,  #f0f0f0 19%,#919f54 89%);  Opera 12+ 
-	background: -ms-radial-gradient(center, ellipse cover,  #f0f0f0 19%,#919f54 89%);  IE10+ 
-	background: radial-gradient(ellipse at center,  #f0f0f0 19%,#919f54 89%);  W3C 
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#919f54',GradientType=1 );  IE6-9 fallback on horizontal gradient */
+.panneau-texte strong {
+	font-weight: bold;
 }
-.impress-on-botaniste .step{
-	display: none;
+.panneau-texte label {
+	font-weight: bold;
+	font-size: 32px;
+	color: #e16e38;
 }
-.impress-on-botaniste #botaniste{
-	display: block;
-}
-/*----------------------------------------------------------------------------------------------------------*/
 
-/* général */
-.droite {
-	float: right;
+.img-plein-ecran {
+	width: 960px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
-.gauche {
+
+.vert {
+	color: #919F54;
+}
+.violet {
+	color: #A65575;
+}
+.bleu {
+	color: #009FB8;
+}
+
+.nombre {
+	color: #e16e38;
+}
+
+/* Diapo : rmll */
+#accueil-rmll {
+	color: black;
+	text-align: center;
+}
+#accueil-rmll h1 {
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 85px;
+}
+#accueil-rmll h2 {
+	font-size: 32px;
+	font-style: italic;
+	font-weight: bold;
+	margin-top: 50px;
+}
+#bloc-auteur {
+	font-size: 24px;
+	margin-top: 100px;
+}
+#bloc-auteur label {
+	font-size: 32px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+#bloc-auteur .auteur {
+	margin-top: 15px;
+	margin-bottom: 7px;
+	font-size: 35px;
+}
+#bloc-auteur .email {
+	color: #8888aa;
+}
+#bloc-auteur .url {
+	color: #a0a0a0;
+}
+
+/* Diapo : couverture */
+#couverture {
+}
+.entete-titre {
+}
+.carreaux {
 	float: left;
+	width: 35px;
+	height: 120px;
+}
+.carreau {
+	width: 30px;
+	height: 30px;
+	margin-bottom: 11px;
+}
+.carreau:nth-of-type(1) {
+	background-color: #e16e38;
+}
+.carreau:nth-of-type(2) {
+	background-color: #B6BF8D;
+}
+.carreau:nth-of-type(3) {
+	background-color: #009FB8;
+}
+.entete-texte {
+	margin-left: 50px;
+	height: 120px;
+}
+.entete-nom {
+	color: #e26d38;
+	font-family: Calibri;
+	font-size: 45px;
+	font-weight: bold;
+}
+.entete-slogan {
+	font-size: 40px;
+	margin-top: 10px;
+}
+#couverture .logo {
+	margin-top: 40px;
+	margin-left: 160px;
+	margin-right: 160px;
 }
 
-/* Slide : continent */
-#continent .logo {
-	margin-right: 20px;
+/* Diapo : centrale (schéma) */
+#centrale {
+}
+.titre-odp {
+	font-family : 'Copperplate Gothic';
+	color: #919191;
+	font-weight: lighter;
+	font-size: 30px;
+}
+.fond-centrale {
+	margin-left: 90px;
 	margin-top: 30px;
 }
-#continent .legende-membres {
-	opacity: 0;
-}
-#continent .carte {
-	position: relative;
-}
-.impress-on-continent #continent .legende-membres {
-	opacity: 1;
-	-webkit-transition: opacity 1s; -moz-transition: opacity 1s; -ms-transition: opacity 1s; -o-transition: opacity 1s; transition: opacity 1s;
+
+#c-objectifs {
+	font-size: 32px;
+	font-weight: bold;
+	color: #c0c0c0;
 	position: absolute;
-	bottom: 80px;
-	left: 50%;
-	font-size: 24px;
-	/*color : #e16e38; /* Orange */
+	left: 280px;
+	top: 360px;
 }
-#continent .jauge {
-	width: 180px;
+#c-grace-a {
+	font-size: 25px;
+	font-weight: bold;
+	color: #c0c0c0;
+	position: absolute;
+	left: 715px;
+	top: 340px;
+}
+#centrale .legende {
+	position: absolute;
 	font-size: 18px;
-	color: #404040;
+	width: 260px;
+	text-align: center;
 }
-#continent .jauge img {
-	margin-bottom: 2px;
-	margin-left: 3px;
+#centrale .legende strong {
+	font-weight: bold;
 }
-#continent .botaniste {
-	position: absolute;
-	-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+#c-texte-reseau {
+	left: 220px;
+	top: 110px;
 }
-#continent .botaniste.asie {
-	top: 270px;
-	left: 900px;
-	height:75px;
+#c-texte-cc {
+	left: 60px;
+	top: 530px;
 }
-#continent .botaniste.europe {
-	top: 284px;
-	left: 600px;
-	height:40px;
+#c-texte-sensibilisation {
+	left: 355px;
+	top: 530px;
 }
-#continent .botaniste.amerique-nord {
-	top: 300px;
-	left: 250px;
-	height:65px;
+#c-texte-partenaires {
+	color: #A65575;
+	left: 620px;
+	top: 110px;
 }
-#continent .botaniste.afrique {
+#c-texte-financement {
+	color: #009FB8;
+	left: 530px;
+	top: 465px;
+}
+#c-texte-equipe {
+	color: #919F54;
+	left: 715px;
 	top: 470px;
-	left: 630px;
-	-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;
-	height:75px;
-}
-#continent .botaniste.amerique-sud {
-	top: 500px;
-	left: 390px;
-	height:40px;
 }
 
-/*----------------------------------------------------------------------------------------------------------*/
-/* Slide : Association */
+/* Diapo : réseau */
+#fond-continents {
+	position: absolute;
+	opacity: 0.6;
+}
+#tas-de-gens {
+	position: absolute;
+	left: 480px;
+	top: 150px;
+	height: 400px;
+}
+#reseau-comment {
+	position: absolute;
+	left: 20px;
+	top: 450px;
+	height: 110px;
+	width: 470px;
+	font-size: 20px;
+	background-color: rgba(255, 255, 255, 0.6);
+	z-index: 200;
+}
+#nb-tb {
+	position: absolute;
+	top: 40px;
+	right: 32px;
+	font-weight: bold;
+	font-family: 'Candara', 'Calibri', Ubuntu;
+	font-size: 28px;
+	width: 300px;
+}
+#profils-tb {
+	position: absolute;
+	top: 240px;
+	left: 40px;
+	padding-left: 40px;
+	font-family: 'Candara', 'Calibri', Ubuntu;
+	font-size: 28px;
+	width: 280px;
+	background-color: rgba(255, 255, 255, 0.6);
+	z-index: 200;
+}
+
+/* Diapo : bien commun */
+#tas-de-rouages {
+	position: absolute;
+	left: 500px;
+	top: 50px;
+	height: 500px;
+}
+#bien-commun-comment {
+	position: absolute;
+	left: 40px;
+	top: 130px;
+	height: 415px;
+	width: 370px;
+}
+
+/* Diapo : sensibiliser */
+#tas-d-outils {
+	position: absolute;
+	left: 500px;
+	top: 50px;
+	height: 500px;
+}
+#sensibiliser-outils {
+	position: absolute;
+	left: 40px;
+	top: 170px;
+	height: 350px;
+	width: 330px;
+}
+
+/* Diapo : association */
 .impress-on-association #continent {
 	opacity : 1;
 }
@@ -340,45 +509,38 @@ Basically we remove the margin and make inactive steps a little bit transparent.
 	bottom: -330px;
 	left: -350px;
 	list-style-type: square;
-	font-family: 'ArchitectsDaughter';
 	font-size: 28px;
-	width:1024px;
+	width: 1024px;
 }
 
-/*----------------------------------------------------------------------------------------------------------*/
-/* Slide : Overview */
-#overview {
+/* Diapo : Overview */
+#overview, #overview-parcours, #overview-plan {
 	display: none
 }
-.impress-on-overview .step {
+.impress-on-overview .step, .impress-on-overview-parcours .step, .impress-on-overview-plan .step {
 	opacity: 1;
 	cursor: pointer;
 }
 
-/*----------------------------------------------------------------------------------------------------------*/
-/* Slide : Collecter */
-#collecter-cadre {
-	width:1024px;
-	height:700px;
-}
+/* Diapo : Collecte */
 #collecter-txt {
 	position: absolute;
-	top:300px;
+	top:120px;
 	right:10px;
-	width:500px;
-	font-family: 'ArchitectsDaughter';
-	font-size: 40px;
+	width:400px;
+	font-size: 36px;
 }
 #img-collecter {
 	position: absolute;
-	top:300px;
-	width:500px;
+	top: 140px;
+	left: 10px;
+	width: 500px;
 }
 #img-outil-id {
 	position: absolute;
-	right:100px;
-	bottom:100px;
-	width:400px;
+	right:70px;
+	bottom:170px;
+	width:380px;
 
     -moz-transform: rotate(-15deg);
 	-webkit-transform: rotate(-15deg);
@@ -386,67 +548,150 @@ Basically we remove the margin and make inactive steps a little bit transparent.
 	-ms-transform: rotate(-15deg);
 	transform: rotate(-15deg);
 }
-/*#collecter.present #img-outil-id {
-    -moz-transform: rotate(-15deg);
-	-webkit-transform: rotate(-15deg);
-	-o-transform: rotate(-15deg);
-	-ms-transform: rotate(-15deg);
-	transform: rotate(-15deg);
 
-    -webkit-transition-delay: 0.25s;
-    -moz-transition-delay: 0.25s;
-    -ms-transition-delay: 0.25s;
-    -o-transition-delay: 0.25s;
-    transition-delay: 0.25s;
-}*/
-
-/*----------------------------------------------------------------------------------------------------------*/
-/* Slide : Saisie-titre */
-#saisie-titre h1 {
+/* Diapo : Saisie-titre */
+#img-accueil {
 	position: absolute;
-	top:-400px;
-	left:-200px;
+	left: 0;
+	height: 650px;
 }
 
-/*----------------------------------------------------------------------------------------------------------*/
-/* Slide : Saisie */
-.saisie-site {
-	text-align: right;
-	font-family: 'Permanent Marker', Ubuntu, sans-serif;
+/* Diapo : Saisie-cel */
+#img-saisie-cel {
+	top: 120px;
 }
-
-
-/*----------------------------------------------------------------------------------------------------------*/
-/* Slide : Saisie-cel */
-.img-cel-interface {
-	width:1024px;
-}
-.cel-fonctions {
+#interet-personnel {
+	position: absolute;
+	bottom: 15px;
+	width: 960px;
 	text-align: center;
-	width:800px;
-}
-.etape-01 {
-
 }
 
-/*----------------------------------------------------------------------------------------------------------*/
-/* Slide : partage-reseau */
-#partage-reseau {
-	width:1024px;
-	height:800px;
+/* Diapo : partage */
+#img-cel-partage {
+	position: absolute;
+	top: 120px;
+	left: 100px;
 }
-.img-chat {
-	position:absolute;
-	top:10px;
-	left:10px;
+#partage-collectif {
+	font-family: 'Candara';
+	position: absolute;
+	top: 410px;
+	left: 20px;
 }
-.img-site-profil {
-	position:absolute;
-	top:10px;
-	right:10px;
+#premier-pas {
+	position: absolute;
+	top: 480px;
 }
-.etape-03 {
-	position:absolute;
-	bottom:10px;
-	margin:0 auto;
+
+
+/* Diapo : partage-reseau */
+#img-chat {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+#img-site-profil {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 370px;
+}
+#se-connaitre {
+	position: absolute;
+	bottom: 160px;
+	margin: 0 auto;
+}
+
+/* Diapo : visualisation */
+#img-site-bota {
+	position: absolute;
+	top: 110px;
+	left: 10px;
+	width: 520px;
+}
+#img-widget-carto {
+	position: absolute;
+	top: 230px;
+	right: 35px;
+	width: 350px;
+}
+#diffusion-connaissance {
+	font-family: 'Candara';
+	position: absolute;
+	top: 60px;
+	right: 10px;
+	width: 380px;
+	font-size: 32px;
+}
+#valoriser-connaissances {
+	position: absolute;
+	bottom: 135px;
+	left: 0;
+}
+
+/* Diapo : validation */
+#flora-data-illustrations {
+	margin-top: 20px;
+}
+#obtenir-reactions {
+	font-family: 'Candara';
+	position: absolute;
+	top: 480px;
+	right: 40px;
+	font-size: 32px;
+	width: 550px;
+}
+
+/* Diapo : validation-identiplante */
+#img-identiplante {
+	width: 600px;
+	position: absolute;
+	right: 50px;
+	top: 140px;
+}
+#plateforme-discussion {
+	font-family: 'Candara', 'Calibri', Ubuntu, Helvetica;
+	font-size: 32px;
+	font-style: italic;
+	width: 200px;
+	position: absolute;
+	left: 60px;
+	top: 180px;
+}
+#plateforme-discussion a {
+	font-style: normal;
+}
+
+/* Diapo : merci */
+#qr-code {
+	position: absolute;
+	right:100px;
+	bottom:120px;
+	width:300px;
+
+    -moz-transform: rotate(-8deg);
+	-webkit-transform: rotate(-8deg);
+	-o-transform: rotate(-8deg);
+	-ms-transform: rotate(-8deg);
+	transform: rotate(-8deg);
+}
+
+/*
+	Permet de générer un PDF pas trop immonde
+	Mode d'emploi: désactiver Javascript, et imprimer dans un fichier en PDF
+	Selon le navigateur, penser à :
+		- imprimer les images de fond
+		- désactiver les entêtes et pieds de page
+		- imprimer en orientation paysage
+	À la fin, utiliser éventuellement PdfMod pour supprimer les diapos vides
+*/
+@media print {
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+  .fallback-message { display: none; }
+  @page land {size: landscape;}
+  .step { page-break-inside: avoid; page-break-after: always; border: none; margin-top: 100px; }
+  .step img { max-height: 100%; }
 }
